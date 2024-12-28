@@ -1,0 +1,297 @@
+<html>
+    <head>
+        <title>期末作業</title>
+        <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+        <script>
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    rtl: true
+                });
+            });
+        </script>
+    <style>
+        body{
+            margin:0px;
+        }
+        .top{
+            background-color:#333;
+            font-size: 20px;
+            height: 100px;
+            width: 100%;
+        }
+        .top h1{
+            color: white;
+            position:absolute;
+            left: 120px;
+            top:0;
+
+        }
+        .top .top1 a{
+            color: white;
+            text-decoration: none;
+            font-size:25px;
+        }
+        .top .top1 a:hover{
+            text-decoration: underline;
+        }
+        .top ul{
+            position:absolute;
+            top:50px;
+            right:10px
+        }
+        .top li{
+            display: inline;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .search{
+            position:absolute;
+            top: 50px;
+            left:550px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        .top .search input{
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+            width: 400px;
+            border-radius: 5px;
+        }
+        .top .search input::placeholder{
+            color: white;
+        }
+        .nav{
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        .nav li{
+            float: left;
+        }
+        .nav li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px ;
+            text-decoration: none;
+        }
+        .nav li a:hover{
+            background-color: #111;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        li.dropdown:hover{
+            background-color: #333;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .slider{
+            background-color: black;
+        }
+        .banner{
+            background-color: #333;
+            color: white;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner h2{
+            font-size: 60px;
+        }
+        .banner h3{
+            font-size: 40px;
+            margin: 15px 0;
+        }
+        .faculty{
+            display: flex;
+            background-image: linear-gradient(#ABDCFF,#0396FF);
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 200px; 
+        }
+        .faculty h5{
+            font-size: 20px;
+
+        }
+        .faculty div{
+            width: 100px;
+            text-align: center;
+        }
+        .faculty img{
+            width: 200%;
+            border-radius: 10px;
+        }
+        .contact {
+            display: block;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact h2{
+            color: rgb(54, 82, 110);
+            font-size: 25px;
+        }
+        .contact .infos{
+            display:flex;
+            margin-top: 30px; 
+            justify-content: center;
+        }
+        .contact .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: Gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .infos .right{
+            height: 200px;               
+        }
+        .contact .infos .right iframe{
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(39,40,34,0.50);
+        }
+        .footer{
+            background-color: #000000;
+            color: #B7B7B7;
+            height:60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <h1>電影劇場</h1>
+            <div class="top1">
+            <ul>
+                <li><a href="#">登入</a></li>
+                <li><a href="#">註冊</a></li>
+            </ul>
+            </div>
+            <div class="logo">
+                <img src="data:image/png;base64,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">
+            </div>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="搜尋:">
+                </form>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">國產片</a></li>
+                <li><a href="#">國外片</a></li>
+                <li class="dropdown"><a href="#">分類</a>
+                    <div class="dropdown-content">
+                        <a href="#">英文</a>
+                        <a href="#">中文</a>
+                        <a href="#">韓文</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="https://i0.wp.com/char.tw/wp-content/uploads/20181215040033_89.jpg?resize=1600%2C914" /></li>
+                    <li><img src="https://leho.com.tw/wp-content/uploads/2023/08/MOVING%E7%95%B0%E8%83%BD_%E4%B8%BB%E8%A6%96%E8%A6%BA%E6%B5%B7%E5%A0%B1_7-%E6%A9%AB%E6%AC%BE-1.jpg" /></li>
+                    <li><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4i6VgXgWzL6dFhhnndDzMsZet9TRNAe3ycFbIF__S6ZL9HiJaBVUnyqO-vVmJOtJgBtkxygOKjx7UZeMt3Y38oCk7wMh1QGfBw32v-ScptNoz4ozkpPmDfARTq5kpdApFeXtAU6D-gg/s1600/%E9%99%A3%E9%A0%AD%E5%89%8D%E5%B0%8E%E6%B5%B7%E5%A0%B1%E6%A9%AB%E5%BC%8F.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <h2>新上市電影</h2>
+            <h3>獅子王</h3>
+            <h3>海洋奇緣2</h3>
+        </div>
+        <div class="faculty">
+            <div>
+                <img src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202402/65C0C99317BCC1707133331.jpeg">
+                <h5>外星人2</h5>
+            </div>
+            <div>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/image002-65e7fad268fd5.jpg?crop=1xw:1xh;center,top&resize=980:*">
+                <h5>冰天凍地</h5>
+            </div>
+            <div>
+                <img src="https://img.4gamers.com.tw/ckfinder/images/Katy/REVIEW-1/220623-lightyear-09.jpg?versionId=ySoRlVqlQ.ferujQKlSG1R3u2BV4wUoT">
+                <h5>巴斯光年</h5>
+            </div>
+            <div>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/02-kotpota-teaser-1sht-taiwan-65e7f9e73f44a.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*">
+                <h5>猩球崛起</h5>
+            </div>
+            <div>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/70x100-%E5%85%A8%E7%89%88-%E9%AD%94%E6%B3%95%E5%A3%9E%E5%A5%B3%E5%B7%AB-01-1-673ef04a5efe5.jpg?crop=1xw:1xh;center,top&resize=980:*">
+                <h5>魔法壞女巫</h5>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>相關資訊</h2>
+            <div class="infos">
+                <div class="left">
+                    <b>新竹巨城威秀影城</b>
+                    <span>300新竹市東區民權路176號4號樓之3</span>
+                    <b> 電話:035346999</b>
+                </div>
+                <div class="right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57945.284090240115!2d120.8982328486328!3d24.809822600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346835eacf47b397%3A0x277a29b8c8c83e43!2z5paw56u55beo5Z-O5aiB56eA5b2x5Z-O!5e0!3m2!1szh-TW!2stw!4v1735367799659!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy;Copyright 2022 Department of Information Management, HOMEWORK. All rights reserved. 維護者 Jerry Yang
+        </div>
+    </body>
+</html>
